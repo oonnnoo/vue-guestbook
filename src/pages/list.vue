@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="commentform-wrapper">
     <publish></publish>
     <ol id="comments">
       <template v-for="item in componentsList">
@@ -47,3 +47,13 @@
   }
 
 </script>
+
+<style scoped>
+  .commentform-wrapper{
+    width: 1000px;
+    word-wrap: break-word;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>

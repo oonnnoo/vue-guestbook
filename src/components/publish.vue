@@ -1,7 +1,7 @@
 <template>
-  <form id="commentform" method="post" @submit.prevent="submitNewComment">
+  <form id="commentform" class="commentform" method="post" @submit.prevent="submitNewComment">
     <div>
-      <textarea cols="100" rows="10" id="comment"></textarea>
+      <textarea class="comment-form-textarea" id="comment"></textarea>
     </div>
     <div>
       <div style="float:left">
@@ -44,8 +44,19 @@
 
 </script>
 <style scoped>
-  body {
-    background: #ffffff
+
+  .commentform-wrapper{
+    max-width: 500px;
+  }
+  .commentform{
+    max-width: 500px;
+  }
+  .comment-form-textarea{
+    display: block;
+    width: 100%;
+    height: 200px;
+    min-height: 200px;
+
   }
 
 </style>
